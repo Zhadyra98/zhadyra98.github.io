@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+.flip3D{ width:150px; height:150px; margin:5px; float:left;}
+.flip3D > .front{
+	 max-width:100%; 
+  max-height:100%;
+  margin:auto;
+  display:block;
+height: 100%; width: 100%; object-fit: contain;
+position:absolute;
+-O-transform: perspective( 600px ) rotateY( 0deg );
+transform: perspective( 600px ) rotateY( 0deg );
+background:#FC0; width:150px; height:150px; border-radius: 7px;
+-O-backface-visibility: hidden;
+backface-visibility: hidden;
+transition: -O-transform .5s linear 0s;
+transition: transform .5s linear 0s;
+box-shadow: 0 3px 6px rgba(220, 206, 206, 1), 0 3px 6px rgba(249, 243, 243, 1);
+}
+.flip3D > .back{
+position:absolute;
+-o-transform:perspective( 600px ) rotateY( 180deg );
+transform:perspective( 600px ) rotateY( 180deg );
+background:#00FF33; width:150px; height:150px; border-radius: 7px;
+-O-backface-visibility: hidden;
+backface-visibility: hidden;
+transition: -O-transform .5s linear 0s;
+transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+-o-transform:perspective( 600px ) rotateY( -180deg );
+transform:perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+-o-transform:perspective( 600px ) rotateY( 0deg );
+transform:perspective( 600px ) rotateY( 0deg );
+}
+div#box1 {
+  background: #9DCEFF;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 110px;
+  left: -400px;
+}
+</style>
+    <title>My First Website</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body id="men">
+
+	<div id="page">
+		
+		<div id="nav">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="#/menu.html">Menu</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">About us</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<p class="text">
+<img  src="menu.png" alt="some_text" style="width:150px;height:100px;">
+			</p>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('akara.jpg')">Akara</div>
+<div class="back">3500 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('sup-lapsha-s-kuricej.jpg') ">Soup</div>
+<div class="back">400 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('Bazeen.jpg')">Bazeen</div>
+<div class="back">3000 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('Bucharest.jpg')">Bucharest</div>
+<div class="back">3500 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('brik.jpg')">Brik</div>
+<div class="back">1500 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center; width:150px; height:150px; background-repeat:no-repeat; background-image:url('pasta.jpg') ">Pasta</div>
+<div class="back">2500 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('images.jpg')">Semolina</div>
+<div class="back">350 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('vishnevij_sok.jpg') ">Cheer juice</div>
+<div class="back">150 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('587cead45a37e38c7b10e39dce785562.jpeg') ">Pizza</div>
+<div class="back">1200 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('Ice-Cream-Hdr.jpg') ">Ice cream</div>
+<div class="back">150 KZT </div>
+</div>
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('new-york-hotdog.jpg') ">Hot dog </div>
+<div class="back">280 KZT </div>
+</div>
+
+<div class="flip3D">
+<div class="front" style="background-position:center;background-repeat:no-repeat; background-image:url('1920476.jpeg') ">Cakes</div>
+<div class="back">200 KZT </div>
+</div>
+ 
+</div>
+<div id="Footer"></div>
+</div>
+		</div>
+	</div>
+</body>
+</html>
